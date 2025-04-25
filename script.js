@@ -14,9 +14,12 @@ async function apifetch() {
 apifetch();
 
 
-// const btn=document.querySelector('.submit-btn');
+const btn=document.querySelector('.submit-btn');
+const output=document.querySelector('.output')
 
-// btn.addEventListener('click',()=>{
-//     apifetch();
-// })
+let html='';
+btn.addEventListener('click',()=>{    
+    html+=`<p>Hamse to na ho payega :)</p>`;
+    output.innerHTML=html;
+})
 
